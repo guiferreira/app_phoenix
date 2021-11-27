@@ -13,6 +13,7 @@
   <thead>
     <tr>
       <th>Brand</th>
+      <th>Category</th>
       <th>Description</th>
       <th>Name</th>
 
@@ -23,6 +24,7 @@
     <%= for car <- @cars do %>
       <tr id={"car-#{car.id}"}>
         <td><%= car.brand %></td>
+        <td><%= car.category.name %></td>
         <td><%= car.description %></td>
         <td><%= car.name %></td>
 
