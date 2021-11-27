@@ -6,7 +6,7 @@ defmodule Live.Cars.Car do
     field :brand, :string
     field :description, :string
     field :name, :string
-    field :category_id, :id
+    belongs_to :category, Live.Categories.Category
 
     timestamps()
   end
