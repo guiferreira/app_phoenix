@@ -19,7 +19,7 @@ defmodule Live.Cars do
 
   """
   def list_cars do
-    Repo.all(Car) |> Repo.preload(:category) |> IO.inspect
+    Repo.all(Car) |> Repo.preload(:category)
   end
 
   def list_all_categories do
